@@ -1,0 +1,11 @@
+package app.logistics;
+
+import app.transport.Transport;
+import app.transport.Truck;
+
+public class RoadLogistics extends Logistics{
+    @Override
+    public Transport createTransport() {
+        return new Truck();
+    }
+}
